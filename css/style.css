@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* regole generali */
+
+.paddingGenerale {
+  padding: 5%;
+}
+
+.riga::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.colonna25 {
+  width: 25%;
+  float: left;
+}
+
+.colonna33 {
+  width: calc(100% / 3);
+  float: left;
+}
+
+.colonna50 {
+  width: 50%;
+  float: left;
+}
+
+/* header */
+
+
+
+/* main */
+
+
+
+/* footer */
