@@ -38,8 +38,6 @@ main p, main span {
   width: 25%;
   float: left;
   height: 100%;
-  /* debug */
-  border: 0.5px solid black;
 }
 
 .colonna30 {
@@ -52,8 +50,6 @@ main p, main span {
   width: calc((100% / 3) - (140px / 3));
   float: left;
   height: 100%;
-  /* debug */
-  border: 0.5 solid black;
 }
 
 .colonna50 {
@@ -83,6 +79,10 @@ a {
 
 .inline {
   display: inline;
+}
+
+.block {
+  display: block;
 }
 
 .button-orange {
@@ -314,10 +314,7 @@ main #mainContent #free #free-right .features {
 }
 
 /* sezione del main con le tre colonne */
-main #mainContent #divisions {
-  /* debug */
 
-}
 
 main #mainContent #divisions .learnMore {
   padding: 20px 20px 40px 20px;
@@ -362,22 +359,129 @@ main #mainContent #divisions .learnMore#divisions-center {
 /* sezione community (seconda) */
 
 main #community {
-  background-color: #00aeb4;
-  height: 500px;
-  /* debug */
-  padding: 50px 0;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,179,185,1) 0%, rgba(0,212,255,1) 100%);
+  color: white;
+  padding: 30px 0;
 }
 
+/* sottosezione testo centrato */
 main #community #learnAndGrow {
-  /* debug */
-  height: 150px;
-  border: 1px solid white;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 30px;
 }
 
+main #community #learnAndGrow h2{
+  margin-bottom: 20px;
+}
+
+/* sottosezione tabella dati */
 main #community #data {
   /* debug */
-  height: 250px;
-  border: 1px solid white;
+  height: 350px;
+}
+
+main #community #data .row-data {
+  height: 50%;
+}
+
+main #community #data .row-data:first-child {
+  border-bottom: 0.5px solid white;
+}
+
+/* regole generali sezione community */
+.data-section {
+  text-align: center;
+  padding: 30px;
+}
+
+.data-section > * {
+  height: calc(100% / 3);
+}
+
+.data-section .biggerFont {
+  font-size: 30px;
+}
+
+.data-section .smallerFont {
+  font-size: 12px;
+}
+
+.data-section .middle-data {
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.data-section .plus {
+  font-size: 20px;
+  position: relative;
+  top: -4px;
+}
+
+.data-section.secondColumn {
+  border-left: 0.5px solid white;
+  border-right: 0.5px solid white;
+}
+
+.data-section.thirdColumn {
+  border-right: 0.5px solid white;
+}
+
+/* riga superiore */
+
+main #community #data .row-data .data-section .handshake {
+  font-size: 40px;
+}
+
+main #community #data .row-data .data-section .hubspot-blogs span:first-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main #community #data .row-data .data-section .hubspot-blogs span:last-child {
+  font-size: 15px;
+}
+
+main #community #data .row-data .data-section .hubspot-academy span:first-child {
+  font-size: 12px;
+}
+
+main #community #data .row-data .data-section .hubspot-academy span:last-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main #community #data .row-data .data-section .inbound {
+  font-size: 20px;
+}
+
+/* riga inferiore */
+
+main #community #data .row-data .data-section .hubspot-connect span:first-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main #community #data .row-data .data-section .hubspot-connect span:last-child {
+  font-size: 15px;
+}
+
+main #community #data .row-data .data-section .world {
+  font-size: 40px;
+}
+
+main #community #data .row-data .data-section .texting {
+  font-size: 40px;
+}
+
+main #community #data .row-data .data-section .growthHub span:first-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main #community #data .row-data .data-section .growthHub span:last-child {
+  font-size: 12px;
 }
 
 /* sezione get started */
