@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Hubspot</title>
   </head>
   <body>
@@ -10,29 +12,51 @@
     <!-- header -->
     <header>
       <!-- sezione fixed della pagina -->
-      <div class="fixed riga">
-        <div class="colonna50">
-
+      <div id="fixed" class="riga">
+        <div id="fixed-left" class="colonna50 paddingLeft">
+          <ul>
+            <li class="inline-block"><a class="english-fixed" href="#"><i class="fas fa-globe-americas"></i>     English &darr;</a></li>
+            <li class="inline-block"><a class="contactUs-fixed" href="#">Contact Us</a></li>
+          </ul>
         </div>
 
-        <div class="colonna50">
-
+        <div id="fixed-right" class="colonna50 paddingRight">
+          <ul>
+            <li class="inline-block"><a href="#"><i class="search-icon fas fa-search"></i></a></li>
+            <li class="login-fixed inline-block"><a class="button-login" href="#">Log In</a></li>
+            <li class="inline-block"><a class="button-getHubspotFree" href="#">GetHubspotFree</a></li>
+          </ul>
         </div>
       </div>
 
       <!-- sezione navbar -->
-      <div class="navbar riga">
-        <div class="colonna50">
-
+      <div id="navbar" class="riga">
+        <div class="paddingLeft colonna50">
+          <img class="hubspot-logo" src="img\logo.svg" alt="">
         </div>
 
-        <div class="colonna50">
-
+        <div class="paddingRight colonna50">
+          <ul>
+            <li class="inline-block"><a href="#">Software    &darr;</a></li>
+            <li class="inline-block"><a href="#"> Pricing</a></li>
+            <li class="inline-block"><a href="#">Resources    &darr;</a></li>
+            <li class="inline-block"><a href="#">Partners    &darr;</a></li>
+            <li class="inline-block"><a href="#">About    &darr;</a></li>
+          </ul>
         </div>
       </div>
 
       <!-- sezione principale header con jumbo bg -->
-      <div class="intro">
+      <div id="intro">
+        <div id="text-intro">
+          <h2>There's a better way to <br>
+            grow.</h2>
+          <p>Marketing, sales, and service software that helps your business grow without <br>
+             compromise. Because "good for the business" should also mean "good for the <br>
+             customer".</p>
+          <span><a class="button-bigger button-getHubspotFree" href="#">GetHubspotFree</a></span>
+          <p>Get started with FREE tools, and upgrade as you grow.</p>
+        </div>
         <div class="layoverHeader">
 
         </div>
@@ -42,25 +66,25 @@
     <!-- main -->
     <main>
       <!-- sezione principale main -->
-      <section class="mainContent">
+      <section id="mainContent">
         <div class="paddingGenerale">
           <!-- sottosezione cubo -->
-          <div class="cube">
+          <div id="cube">
 
           </div>
 
           <!-- sottosezione free hubspot -->
-          <div class="free">
+          <div id="free">
 
           </div>
 
           <!-- sottosezione marketing sales service -->
-          <div class="divisions riga">
+          <div id="divisions" class="riga">
             <div class="learnMore colonna33">
 
             </div>
 
-            <div class="learnMore center colonna33">
+            <div id="divisions-center" class="learnMore colonna33">
 
             </div>
 
@@ -72,30 +96,30 @@
       </section>
 
       <!-- sezione community del main -->
-      <section class="community">
+      <section id="community">
         <div class="paddingGenerale">
           <!-- sottosezione learn and grow -->
-          <div class="learnAndGrow">
+          <div id="learnAndGrow">
 
           </div>
 
           <!-- sottosezione tabella dati -->
-          <div class="data">
+          <div id="data">
 
           </div>
         </div>
       </section>
 
       <!-- sezione costumers e start today -->
-      <section class="getStarted">
+      <section id="getStarted">
         <div class="paddingGenerale">
           <!-- sottosezione costumers -->
-          <div class="costumers">
+          <div id="costumers">
 
           </div>
 
           <!-- sottosezione start today -->
-          <div class="start">
+          <div id="start">
 
           </div>
         </div>
@@ -107,17 +131,17 @@
     <footer>
       <div class="paddingGenerale">
         <!-- sezione links alle varie pagine del sito -->
-        <div class="linksFooter">
+        <div id="linksFooter">
 
         </div>
 
         <!-- sezione impostazione lingua -->
-        <div class="languages">
+        <div id="languages">
 
         </div>
 
         <!-- sezione copyright -->
-        <div class="copyright">
+        <div id="copyright">
 
         </div>
       </div>

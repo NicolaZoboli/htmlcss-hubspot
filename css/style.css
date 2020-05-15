@@ -4,11 +4,24 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 450;
+}
+
 
 /* regole generali */
 
 .paddingGenerale {
   padding: 0 10%;
+}
+
+.paddingLeft {
+  padding-left: 10%;
+}
+
+.paddingRight {
+  padding-right: 10%;
 }
 
 .riga::after {
@@ -38,32 +51,105 @@
   float: left;
   height: 100%;
   /* debug */
-  border: 0.5px solid black;
+  /* border: 0.5px solid black; */
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.button-getHubspotFree {
+  background-color: #fe775a;
+  border-radius: 5px;
+  padding: 7px;
+  color: white;
+}
+
+.button-login {
+  background-color: white;
+  border: 1px solid #fe775a;
+  border-radius: 5px;
+  padding: 7px;
+  color: #fe775a;
+}
 /* header */
 
-header .fixed {
+
+/* sezione fixed */
+header #fixed {
   position: fixed;
   top: 0;
   width: 100%;
   height: 10vh;
   z-index: 500;
-  /* debug */
-  border: 1px solid black;
-  background-color: lightgrey;
+  background-color: #f4f9fd;
+  border-bottom: 0.5px solid black;
 }
 
-header .navbar {
+header #fixed ul {
+  line-height: 10vh;
+}
+
+/* parte sinistra del fixed */
+
+header #fixed #fixed-left ul .english-fixed {
+  border-right: 1px solid grey;
+  padding-right: 10px;
+}
+
+header #fixed #fixed-left ul .contactUs-fixed {
+  padding-left: 10px;
+}
+
+/* parte destra del fixed */
+header #fixed #fixed-right ul {
+  text-align: right;
+}
+
+header #fixed #fixed-right ul .search-icon{
+  color: #24b0c6;
+}
+
+header #fixed #fixed-right ul .login-fixed {
+  margin: 0 30px;
+}
+
+/* sezione navbar */
+header #navbar {
   height: 10vh;
   margin-top: 10vh;
-  /* debug */
   background-color: white;
-  border: 1px solid black;
-  border-top: none;
 }
 
-header .intro {
+/* logo navbar */
+header #navbar .hubspot-logo {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 45%;
+}
+
+/* navbar vera e propria */
+header #navbar ul {
+  line-height: 10vh;
+  text-align: right;
+}
+
+header #navbar li a {
+  margin-left: 30px;
+}
+
+/* sezione contenuto principale header */
+header #intro {
   height: 80vh;
   background-color: #fff5ef;
   background-image: url(../img/jumbotron.png);
@@ -73,6 +159,32 @@ header .intro {
   position: relative;
 }
 
+/* parte di testo nell'header */
+header #intro #text-intro {
+  position: absolute;
+  left: 10%;
+  top: 7%;
+  max-width: 50%;
+}
+
+header #intro #text-intro > * {
+  margin-bottom: 40px;
+}
+
+header #intro #text-intro h2 {
+  font-size: 35px;
+  color: #33475b;
+}
+
+header #intro #text-intro span {
+  display: block;
+}
+
+header #intro #text-intro span .button-bigger {
+  padding: 15px;
+}
+
+/* fascia azzurra in layover in basso nell'header */
 header .layoverHeader {
   position: absolute;
   width: 100%;
@@ -87,13 +199,13 @@ header .layoverHeader {
 /* main */
 
 /* sezione maincontent (prima) */
-main .mainContent {
+main #mainContent {
   /* debug */
   background-color: lightgrey;
   padding-top: 30px;
 }
 
-main .mainContent .cube {
+main #mainContent #cube {
   margin: 0 auto;
   margin-bottom: 30px;
   /* debug */
@@ -102,7 +214,7 @@ main .mainContent .cube {
   padding-top: 30px;
 }
 
-main .mainContent .free {
+main #mainContent #free {
   margin: 0 auto;
   margin-bottom: 30px;
   /* debug */
@@ -110,36 +222,36 @@ main .mainContent .free {
   background-color: pink;
 }
 
-main .mainContent .divisions {
-  height: 80vh;
+main #mainContent #divisions {
   /* debug */
+  height: 80vh;
   padding-bottom: 30px;
 }
 
-main .mainContent .divisions .learnMore {
+main #mainContent #divisions .learnMore {
   background-color: red;
 }
 
-main .mainContent .divisions .learnMore.center {
+main #mainContent #divisions .learnMore#divisions-center {
   margin: 0 70px;
 }
 
 /* sezione community (seconda) */
 
-main .community {
+main #community {
   background-color: #00aeb4;
   height: 500px;
   /* debug */
   padding: 50px 0;
 }
 
-main .community .learnAndGrow {
+main #community #learnAndGrow {
   /* debug */
   height: 150px;
   border: 1px solid white;
 }
 
-main .community .data {
+main #community #data {
   /* debug */
   height: 250px;
   border: 1px solid white;
@@ -147,19 +259,19 @@ main .community .data {
 
 /* sezione get started */
 
-main .getStarted {
+main #getStarted {
   background-color: white;
   height: 500px;
   padding: 50px 0;
 }
 
-main .getStarted .costumers {
+main #getStarted #costumers {
   /* debug */
   height: 150px;
   border: 1px solid black;
 }
 
-main .getStarted .start {
+main #getStarted #start {
   /* debug */
   height: 250px;
   border: 1px solid black;
@@ -172,19 +284,19 @@ footer {
   padding: 25px 0;
 }
 
-footer .linksFooter {
+footer #linksFooter {
   height: 250px;
   /* debug */
   border: 1px solid white;
 }
 
-footer .languages {
+footer #languages {
   height: 100px;
   /* debug */
   border: 1px solid white;
 }
 
-footer .copyright {
+footer #copyright {
   height: 100px;
   /* debug */
   border: 1px solid white;
