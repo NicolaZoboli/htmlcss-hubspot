@@ -53,6 +53,18 @@ main p, main span {
   height: 100%;
 }
 
+.colonna40 {
+  width: 40%;
+  float: left;
+  height: 100%;
+}
+
+.colonna60 {
+  width: 60%;
+  float: left;
+  height: 100%;
+}
+
 .colonna50 {
   width: 50%;
   float: left;
@@ -440,21 +452,76 @@ main #community #data .row-data:first-child {
 
 main #getStarted {
   background-color: white;
-  height: 500px;
   padding: 50px 0;
 }
 
-main #getStarted #costumers {
-  /* debug */
-  height: 150px;
-  border: 1px solid black;
+/* sottosezione costumers */
+
+/* parte di sinistra con il testo */
+
+main #getStarted #costumers .colonna40 {
+  text-align: left;
+  padding: 10px 50px;
 }
 
-main #getStarted #start {
-  /* debug */
-  height: 250px;
-  border: 1px solid black;
+main #getStarted #costumers .colonna40 h3 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: #33475b;
 }
+
+main #getStarted #costumers .colonna40 span {
+  color: #33475b;
+}
+
+/* parte di destra con i loghi dei clienti */
+
+main #getStarted #costumers .colonna60 {
+  padding: 20px 20px 0;
+}
+
+main #getStarted #costumers .colonna60 .row-img {
+  height: 50%;
+}
+
+main #getStarted #costumers .colonna60 .row-img .colonna25 {
+  padding: 10px;
+}
+
+main #getStarted #costumers .colonna60 .row-img .colonna25 img {
+  width: 100px;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+/* sottosezione start */
+
+
+/* parte di sinistra con il testo */
+main #getStarted #start .text-start {
+  padding: 20px 60px 0 0;
+}
+
+main #getStarted #start .text-start * {
+  margin-bottom: 40px;
+}
+
+main #getStarted #start .text-start h3 {
+  color: #33475b;
+}
+
+/* parte di destra con l'immagine della donna */
+
+main #getStarted #start .img-start {
+  padding: 20px 20px 0;
+  text-align: right;
+}
+
+main #getStarted #start .img-start img {
+  height: 250px;
+}
+
 /* footer */
 
 footer {
