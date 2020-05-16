@@ -12,6 +12,7 @@ body {
 
 /* regole generali */
 
+
 main p, main span {
   font-size: 0.9em;
 }
@@ -111,6 +112,27 @@ a {
 .or-line {
   border-bottom: 0.5px solid grey;
 }
+
+.fontsize12px {
+  font-size: 12px;
+}
+
+.fontsize15px {
+  font-size: 15px;
+}
+
+.fontsize20px {
+  font-size: 20px;
+}
+
+.fontsize30px {
+  font-size: 30px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 /* header */
 
 
@@ -149,7 +171,7 @@ header #fixed #fixed-right ul .search-icon{
   color: #24b0c6;
 }
 
-header #fixed #fixed-right ul .login-fixed {
+header #fixed #fixed-right ul .button-white {
   margin: 0 30px;
 }
 
@@ -195,6 +217,7 @@ header #intro #text-intro {
   left: 10%;
   top: 7%;
   max-width: 50%;
+  max-height: 60%;
 }
 
 header #intro #text-intro > * {
@@ -206,16 +229,15 @@ header #intro #text-intro h1 {
   color: #33475b;
 }
 
-header #intro #text-intro span {
-  display: block;
+header #intro #text-intro p {
+  line-height: 25px;
 }
-
 
 /* fascia azzurra in layover in basso nell'header */
 header .layoverHeader {
   position: absolute;
-  width: 100%;
   bottom: 0;
+  width: 100%;
   height: 10vh;
   border-top: 2px solid #33475b;
   border-bottom: 2px solid #33475b;
@@ -225,17 +247,34 @@ header .layoverHeader {
 
 /* main */
 
+/* regole generali main */
+
+main #mainContent h3 {
+  font-size: 20px;
+}
+
+main #mainContent h4 {
+  text-transform: uppercase;
+}
+
+main #mainContent h2, main #mainContent h3, main #mainContent h4 {
+  color: #33475b;
+}
+
+main #mainContent #free, main #mainContent .learnMore {
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 3px lightgrey;
+  -webkit-box-shadow: 0 0 3px lightgrey;
+  box-shadow: 0 0 3px lightgrey;
+}
+
 /* sezione maincontent (prima) */
 main #mainContent {
   background-color: #f4f9fd;
-  /* debug */
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-main #maincontent #free h4 {
-  text-transform: uppercase;
-}
 
 /* sezione immagine cubo */
 main #mainContent #cube {
@@ -248,39 +287,30 @@ main #mainContent #cube img {
 }
 
 main #mainContent #cube h2 {
-  color: #33475b;
   font-size: 30px;
   margin: 20px 0;
 }
 
 /* sezione free hubspot crm (la seconda del maincontent) */
 main #mainContent #free {
-  margin: 30px auto;
+  margin: 30px 0;
   background-color: white;
   padding: 20px;
-  border-radius: 5px;
-  -moz-box-shadow: 0 0 3px lightgrey;
-  -webkit-box-shadow: 0 0 3px lightgrey;
-  box-shadow: 0 0 3px lightgrey;
 }
 
 /* parte di sinistra con l'immagine e il bottone */
 
 main #mainContent #free #free-left {
-  padding: 30px;
+  padding: 20px 0;
+  text-align: center;
 }
 
 main #mainContent #free #free-left img {
   width: 50%;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
 }
 
 main #mainContent #free #free-left span {
   margin-top: 40px;
-  display: block;
-  text-align: center;
 }
 
 /* parte di destra con il testo */
@@ -288,21 +318,12 @@ main #mainContent #free #free-right {
   padding: 20px;
 }
 
-main #mainContent #free #free-right p {
-  margin-bottom: 20px;
-}
-
-main #mainContent #free #free-right h3 {
-  color: #33475b;
-  font-size: 20px;
+main #mainContent #free #free-right > * {
   margin-bottom: 20px;
 }
 
 main #mainContent #free #free-right h4 {
-  text-transform: uppercase;
-  color: #33475b;
   width: 30%;
-  margin-bottom: 20px;
 }
 
 main #mainContent #free #free-right .or-line {
@@ -317,39 +338,31 @@ main #mainContent #free #free-right .features {
 
 
 main #mainContent #divisions .learnMore {
-  padding: 20px 20px 40px 20px;
+  padding: 20px 10px 40px 10px;
   text-align: center;
   background-color: white;
-  border-radius: 5px;
-  -moz-box-shadow: 0 0 3px lightgrey;
-  -webkit-box-shadow: 0 0 3px lightgrey;
-  box-shadow: 0 0 3px lightgrey;
 }
 
 main #mainContent #divisions .learnMore > * {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 main #mainContent #divisions .learnMore img {
   height: 100px;
 }
 
+main #mainContent #divisions .learnMore p {
+  font-size: 0.9em;
+}
+
 main #mainContent #divisions .learnMore ul {
   text-align: left;
+  margin-bottom: 40px;
 }
 
 main #mainContent #divisions .learnMore ul li {
   font-size: 0.9em;
   margin-bottom: 5px;
-}
-
-main #mainContent #divisions .learnMore h3 {
-  color: #33475b;
-}
-
-main #mainContent #divisions .learnMore h4 {
-  color: #33475b;
-  text-transform: uppercase;
 }
 
 main #mainContent #divisions .learnMore#divisions-center {
@@ -378,8 +391,7 @@ main #community #learnAndGrow h2{
 
 /* sottosezione tabella dati */
 main #community #data {
-  /* debug */
-  height: 350px;
+  height: 400px;
 }
 
 main #community #data .row-data {
@@ -391,97 +403,37 @@ main #community #data .row-data:first-child {
 }
 
 /* regole generali sezione community */
-.data-section {
+#data .row-data .data-section {
   text-align: center;
   padding: 30px;
 }
 
-.data-section > * {
+#data .row-data .data-section > * {
   height: calc(100% / 3);
 }
 
-.data-section .biggerFont {
-  font-size: 30px;
-}
-
-.data-section .smallerFont {
-  font-size: 12px;
-}
-
-.data-section .middle-data {
+#data .row-data .data-section .middle-data {
   margin: 20px 0;
   font-weight: bold;
 }
 
-.data-section .plus {
+#data .row-data .data-section .plus {
   font-size: 20px;
   position: relative;
   top: -4px;
 }
 
-.data-section.secondColumn {
+#data .row-data .data-section.secondColumn {
   border-left: 0.5px solid white;
   border-right: 0.5px solid white;
 }
 
-.data-section.thirdColumn {
+#data .row-data .data-section.thirdColumn {
   border-right: 0.5px solid white;
 }
 
-/* riga superiore */
-
-main #community #data .row-data .data-section .handshake {
+#data .row-data .data-section .big-icon {
   font-size: 40px;
-}
-
-main #community #data .row-data .data-section .hubspot-blogs span:first-child {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-main #community #data .row-data .data-section .hubspot-blogs span:last-child {
-  font-size: 15px;
-}
-
-main #community #data .row-data .data-section .hubspot-academy span:first-child {
-  font-size: 12px;
-}
-
-main #community #data .row-data .data-section .hubspot-academy span:last-child {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-main #community #data .row-data .data-section .inbound {
-  font-size: 20px;
-}
-
-/* riga inferiore */
-
-main #community #data .row-data .data-section .hubspot-connect span:first-child {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-main #community #data .row-data .data-section .hubspot-connect span:last-child {
-  font-size: 15px;
-}
-
-main #community #data .row-data .data-section .world {
-  font-size: 40px;
-}
-
-main #community #data .row-data .data-section .texting {
-  font-size: 40px;
-}
-
-main #community #data .row-data .data-section .growthHub span:first-child {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-main #community #data .row-data .data-section .growthHub span:last-child {
-  font-size: 12px;
 }
 
 /* sezione get started */
