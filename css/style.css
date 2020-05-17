@@ -526,24 +526,99 @@ main #getStarted #start .img-start img {
 
 footer {
   background-color: #32495b;
-  height: 500px;
   padding: 25px 0;
+  font-size: 14px;
+  color: white;
 }
 
-footer #linksFooter {
-  height: 250px;
-  /* debug */
-  border: 1px solid white;
+/* regole generali */
+
+footer a {
+  color: white;
 }
 
-footer #languages {
-  height: 100px;
-  /* debug */
-  border: 1px solid white;
+/* sottosezione link a tool e software */
+
+footer #page-footer {
+  padding: 20px 0 0;
 }
 
-footer #copyright {
-  height: 100px;
-  /* debug */
-  border: 1px solid white;
+footer #links-footer {
+  height: 65%;
+}
+
+footer #page-footer #links-footer .colonna25 ul li {
+  margin-bottom: 10px;
+}
+
+footer #page-footer #links-footer .colonna25 ul li h4 {
+  margin-bottom: 30px;
+}
+
+footer #page-footer #links-footer .colonna25 ul li span {
+  margin: 20px 0;
+}
+
+footer #page-footer #links-footer .colonna25 ul li span .button-footer {
+  background-color: white;
+  color: #32495b;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+/* lista dei social */
+
+footer #page-footer #links-footer .colonna25 ul li .social-footer li {
+  margin-right: 30px;
+}
+
+footer #page-footer #links-footer .colonna25 ul li .social-footer li a {
+  color: white;
+}
+
+footer #page-footer #links-footer .colonna25 ul li .social-footer li a .social-icon {
+  width: 6px;
+}
+
+/* sottosezione scelta lingua */
+
+footer #languages-footer {
+  height: 20%;
+  text-align: center;
+  border-bottom: 0.5px solid white;
+  padding: 10px 0;
+}
+
+footer #languages-footer ul li {
+  margin-right: 20px;
+}
+
+/* sottosezione copyright */
+
+footer #copyright-footer {
+  height: 15%;
+}
+
+/* parte di sinistra */
+
+footer #copyright-footer .copyright-left {
+  text-align: left;
+}
+
+footer #copyright-footer .copyright-left img {
+  width: 80px;
+  margin-top: 20px;
+  position: relative;
+  left: -0.8%;
+}
+
+/* parte di destra */
+
+footer #copyright-footer .copyright-right {
+  text-align: right;
+  padding-top: 20px;
+}
+
+footer #copyright-footer .copyright-right span {
+  margin-left: 10px;
 }
