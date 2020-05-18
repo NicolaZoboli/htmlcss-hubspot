@@ -1,0 +1,842 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 450;
+}
+
+
+/* regole generali */
+
+
+main p, main span {
+  font-size: 0.9em;
+}
+
+.paddingGenerale {
+  padding: 0 10%;
+}
+
+.paddingLeft {
+  padding-left: 10%;
+}
+
+.paddingRight {
+  padding-right: 10%;
+}
+
+.riga::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.colonna20 {
+  width: 20%;
+  float: left;
+  height: 100%;
+}
+
+.colonna25 {
+  width: 25%;
+  float: left;
+  height: 100%;
+}
+
+.colonna30 {
+  width: 30%;
+  float: left;
+  height: 100%;
+}
+
+.colonna33 {
+  width: calc((100% / 3) - (140px / 3));
+  float: left;
+  height: 100%;
+}
+
+.colonna40 {
+  width: 40%;
+  float: left;
+  height: 100%;
+}
+
+.colonna60 {
+  width: 60%;
+  float: left;
+  height: 100%;
+}
+
+.colonna50 {
+  width: 50%;
+  float: left;
+  height: 100%;
+}
+
+.colonna70 {
+  width: 70%;
+  float: left;
+  height: 100%;
+}
+
+.colonna80 {
+  width: 80%;
+  float: left;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.button-orange {
+  background-color: #fe775a;
+  border-radius: 5px;
+  padding: 7px;
+  color: white;
+}
+
+.button-orange:hover {
+  background-color: rgba(254, 119, 90, 0.6);
+}
+
+.button-white {
+  background-color: white;
+  border: 1px solid #fe775a;
+  border-radius: 5px;
+  padding: 7px;
+  color: #fe775a;
+}
+
+.button-white:hover {
+  background-color: #fff1ee;
+}
+
+.button-bigger {
+  padding: 20px;
+}
+
+.orangeColor {
+  color: #fe775a;
+}
+
+.or-line {
+  border-bottom: 0.5px solid grey;
+}
+
+.fontsize12px {
+  font-size: 12px;
+}
+
+.fontsize15px {
+  font-size: 15px;
+}
+
+.fontsize20px {
+  font-size: 20px;
+}
+
+.fontsize30px {
+  font-size: 30px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* regole dropdown */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border: 0.5px solid lightgrey;
+  border-radius: .1875rem;
+  top: 85%;
+  z-index: 600;
+}
+
+.dropdown-content .hover-blue:hover {
+  background-color: #e5f5f8;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* header */
+
+
+/* sezione fixed */
+header #fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  z-index: 500;
+  background-color: #f4f9fd;
+  border-bottom: 0.5px solid black;
+}
+
+header #fixed ul {
+  line-height: 10vh;
+}
+
+/* parte sinistra del fixed */
+
+header #fixed #fixed-left ul .english-fixed {
+  border-right: 1px solid grey;
+  padding-right: 10px;
+}
+
+header #fixed #fixed-left ul .contactUs-fixed {
+  padding-left: 10px;
+}
+
+/* dropdown delle lingue */
+
+header #fixed #fixed-left ul li .dropdown .languages-header {
+  width: 100%;
+}
+
+header #fixed #fixed-left ul li .dropdown .languages-header a {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+}
+
+/* parte destra del fixed */
+header #fixed #fixed-right ul {
+  text-align: right;
+}
+
+header #fixed #fixed-right ul .search-icon{
+  color: #24b0c6;
+}
+
+header #fixed #fixed-right ul .button-white {
+  margin: 0 30px;
+}
+
+/* sezione navbar */
+header #navbar {
+  height: 10vh;
+  margin-top: 10vh;
+  background-color: white;
+}
+
+/* logo navbar */
+header #navbar .hubspot-logo {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 45%;
+}
+
+/* navbar vera e propria */
+header #navbar .ul-navbar {
+  line-height: 10vh;
+  text-align: right;
+}
+
+header #navbar .navbar-item {
+  margin-left: 30px;
+}
+
+/* dropdown della navbar */
+
+/* regole generali */
+
+.dropdown h4 {
+  color: #33475b;
+}
+
+.dropdown p {
+  font-size: 12px;
+}
+
+.dropdown span {
+  font-size: 14px;
+}
+
+/* dropdown di software */
+
+header #navbar ul li .dropdown .software-navbar {
+  width: 500px;
+}
+
+header #navbar ul li .dropdown .software-navbar ul li {
+  text-align: left;
+  line-height: 100%;
+}
+
+.img-dropdown-navbar {
+  padding: 10px;
+}
+
+.text-dropdown-navbar {
+  position: relative;
+  top: 17px;
+}
+
+.text-dropdown-navbar p {
+  padding-top: 5px;
+  line-height: 15px;
+}
+
+.just-text-software {
+  padding: 0 20px;
+}
+
+.just-text-software p {
+  padding-top: 5px;
+  line-height: 20px;
+}
+
+.software-navbar ul li .hover-blue {
+  margin: 0 10px;
+}
+
+.software-navbar ul li .hover-blue.first {
+  margin-top: 10px;
+}
+
+.software-navbar ul li .hover-blue.last {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 20px 0;
+  border-top: 0.5px solid lightgrey;
+}
+
+/* dropdown di resources */
+
+header #navbar ul li .dropdown .resources-navbar {
+  width: 900px;
+  position: absolute;
+  left: -400%;
+  padding: 20px;
+}
+
+header #navbar ul li .dropdown .resources-navbar ul {
+  height: calc(100% / 3);
+  border-bottom: 0.5px solid lightgrey;
+}
+
+header #navbar ul li .dropdown .resources-navbar ul li {
+  line-height: 100%;
+  height: 100px;
+  width: calc((100% / 3) - 3px);
+  text-align: left;
+  margin: 10px 0;
+}
+
+header #navbar ul li .dropdown .resources-navbar ul li a {
+  padding: 20px;
+}
+
+header #navbar ul li .dropdown .resources-navbar ul:last-of-type {
+  border-bottom: none;
+}
+
+header #navbar ul li .dropdown .resources-navbar ul li a h4 {
+  padding-bottom: 10px;
+}
+
+
+/* dropdown di partners */
+
+header #navbar ul li .dropdown .partners-navbar {
+  width: 700px;
+  position: absolute;
+  left: -350%;
+  padding: 20px;
+}
+
+header #navbar ul li .dropdown .partners-navbar ul li {
+  line-height: 100%;
+  width: 49%;
+  text-align: left;
+}
+
+header #navbar ul li .dropdown .partners-navbar ul li a {
+  padding: 20px;
+}
+
+header #navbar ul li .dropdown .partners-navbar ul li a h4 {
+  padding-bottom: 10px;
+}
+
+/* dropdown di about */
+
+header #navbar ul li .dropdown .about-navbar {
+  width: 550px;
+  position: absolute;
+  left: -450%;
+  padding: 20px;
+}
+
+header #navbar ul li .dropdown .about-navbar ul {
+  text-align: left;
+  width: 32%;
+}
+
+
+header #navbar ul li .dropdown .about-navbar .news {
+  position: relative;
+  top: -136px;
+}
+
+header #navbar ul li .dropdown .about-navbar .investors {
+  position: relative;
+  top: -257px;
+}
+
+header #navbar ul li .dropdown .about-navbar ul li {
+  line-height: 100%;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+header #navbar ul li .dropdown .about-navbar ul li a, header #navbar ul li .dropdown .about-navbar ul li h4 {
+  padding: 12px;
+}
+
+/* sezione contenuto principale header */
+header #intro {
+  height: 80vh;
+  background-color: #fff5ef;
+  background-image: url(../img/jumbotron.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  position: relative;
+}
+
+/* parte di testo nell'header */
+header #intro #text-intro {
+  position: absolute;
+  left: 10%;
+  top: 7%;
+  max-width: 50%;
+  max-height: 60%;
+}
+
+header #intro #text-intro > * {
+  margin-bottom: 40px;
+}
+
+header #intro #text-intro h1 {
+  font-size: 35px;
+  color: #33475b;
+}
+
+header #intro #text-intro p {
+  line-height: 25px;
+}
+
+/* fascia azzurra in layover in basso nell'header */
+header .layoverHeader {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  border-top: 2px solid #33475b;
+  border-bottom: 2px solid #33475b;
+  background-color: #afebe4;
+  z-index: 450;
+}
+
+/* main */
+
+/* regole generali main */
+
+main #mainContent h3 {
+  font-size: 20px;
+}
+
+main #mainContent h4 {
+  text-transform: uppercase;
+}
+
+main #mainContent h2, main #mainContent h3, main #mainContent h4 {
+  color: #33475b;
+}
+
+main #mainContent #free, main #mainContent .learnMore {
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 3px lightgrey;
+  -webkit-box-shadow: 0 0 3px lightgrey;
+  box-shadow: 0 0 3px lightgrey;
+}
+
+/* sezione maincontent (prima) */
+main #mainContent {
+  background-color: #f4f9fd;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+/* sezione immagine cubo */
+main #mainContent #cube {
+  text-align: center;
+  padding: 0 5%;
+}
+
+main #mainContent #cube img {
+  width: 15vw;
+}
+
+main #mainContent #cube h2 {
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+/* sezione free hubspot crm (la seconda del maincontent) */
+main #mainContent #free {
+  margin: 30px 0;
+  background-color: white;
+  padding: 20px;
+}
+
+/* parte di sinistra con l'immagine e il bottone */
+
+main #mainContent #free #free-left {
+  padding: 20px 0;
+  text-align: center;
+}
+
+main #mainContent #free #free-left img {
+  width: 50%;
+}
+
+main #mainContent #free #free-left span {
+  margin-top: 40px;
+}
+
+/* parte di destra con il testo */
+main #mainContent #free #free-right {
+  padding: 20px;
+}
+
+main #mainContent #free #free-right > * {
+  margin-bottom: 20px;
+}
+
+main #mainContent #free #free-right h4 {
+  width: 30%;
+}
+
+main #mainContent #free #free-right .or-line {
+  width: 65%;
+}
+
+main #mainContent #free #free-right .features {
+  margin-right: 15px;
+}
+
+/* sezione del main con le tre colonne */
+
+
+main #mainContent #divisions .learnMore {
+  padding: 20px 10px 40px 10px;
+  text-align: center;
+  background-color: white;
+}
+
+main #mainContent #divisions .learnMore > * {
+  margin-bottom: 20px;
+}
+
+main #mainContent #divisions .learnMore img {
+  height: 100px;
+}
+
+main #mainContent #divisions .learnMore p {
+  font-size: 0.9em;
+}
+
+main #mainContent #divisions .learnMore ul {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+main #mainContent #divisions .learnMore ul li {
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+main #mainContent #divisions .learnMore#divisions-center {
+  margin: 0 70px;
+}
+
+/* sezione community (seconda) */
+
+main #community {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,179,185,1) 0%, rgba(0,212,255,1) 100%);
+  color: white;
+  padding: 30px 0;
+}
+
+/* sottosezione testo centrato */
+main #community #learnAndGrow {
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+main #community #learnAndGrow h2{
+  margin-bottom: 20px;
+}
+
+/* sottosezione tabella dati */
+main #community #data {
+  height: 400px;
+}
+
+main #community #data .row-data {
+  height: 50%;
+}
+
+main #community #data .row-data:first-child {
+  border-bottom: 0.5px solid white;
+}
+
+/* regole generali sezione community */
+#data .row-data .data-section {
+  text-align: center;
+  padding: 30px;
+}
+
+#data .row-data .data-section > * {
+  height: calc(100% / 3);
+}
+
+#data .row-data .data-section .middle-data {
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+#data .row-data .data-section .plus {
+  font-size: 20px;
+  position: relative;
+  top: -4px;
+}
+
+#data .row-data .data-section.secondColumn {
+  border-left: 0.5px solid white;
+  border-right: 0.5px solid white;
+}
+
+#data .row-data .data-section.thirdColumn {
+  border-right: 0.5px solid white;
+}
+
+#data .row-data .data-section .big-icon {
+  font-size: 40px;
+}
+
+/* sezione get started */
+
+main #getStarted {
+  background-color: white;
+  padding: 50px 0;
+}
+
+/* sottosezione costumers */
+
+/* parte di sinistra con il testo */
+
+main #getStarted #costumers .colonna40 {
+  text-align: left;
+  padding: 10px 50px;
+}
+
+main #getStarted #costumers .colonna40 h3 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  color: #33475b;
+}
+
+main #getStarted #costumers .colonna40 span {
+  color: #33475b;
+}
+
+/* parte di destra con i loghi dei clienti */
+
+main #getStarted #costumers .colonna60 {
+  padding: 20px 20px 0;
+}
+
+main #getStarted #costumers .colonna60 .row-img {
+  height: 50%;
+}
+
+main #getStarted #costumers .colonna60 .row-img .colonna25 {
+  padding: 10px;
+}
+
+main #getStarted #costumers .colonna60 .row-img .colonna25 img {
+  width: 100px;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+/* sottosezione start */
+
+
+/* parte di sinistra con il testo */
+main #getStarted #start .text-start {
+  padding: 20px 60px 0 0;
+}
+
+main #getStarted #start .text-start * {
+  margin-bottom: 40px;
+}
+
+main #getStarted #start .text-start h3 {
+  color: #33475b;
+}
+
+/* parte di destra con l'immagine della donna */
+
+main #getStarted #start .img-start {
+  padding: 20px 20px 0;
+  text-align: right;
+}
+
+main #getStarted #start .img-start img {
+  height: 250px;
+}
+
+/* footer */
+
+footer {
+  background-color: #32495b;
+  padding: 25px 0;
+  font-size: 14px;
+  color: white;
+}
+
+/* regole generali */
+
+footer a {
+  color: white;
+}
+
+footer a:hover, footer .social-icon:hover {
+  color: #24b0c6;
+}
+
+/* sottosezione link a tool e software */
+
+footer #page-footer {
+  padding: 20px 0 0;
+}
+
+footer #links-footer {
+  height: 65%;
+}
+
+footer #page-footer #links-footer .colonna25 ul li {
+  margin-bottom: 10px;
+}
+
+footer #page-footer #links-footer .colonna25 ul li h4 {
+  margin-bottom: 30px;
+}
+
+footer #page-footer #links-footer .colonna25 ul li span {
+  margin: 20px 0;
+}
+
+footer #page-footer #links-footer .colonna25 ul li span .button-footer {
+  background-color: white;
+  color: #32495b;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+/* lista dei social */
+
+footer #page-footer #links-footer .colonna25 ul li .social-footer li {
+  margin-right: 30px;
+}
+
+footer #page-footer #links-footer .colonna25 ul li .social-footer li a .social-icon {
+  width: 6px;
+}
+
+
+
+/* sottosezione scelta lingua */
+
+footer #languages-footer {
+  height: 20%;
+  text-align: center;
+  border-bottom: 0.5px solid white;
+  padding: 10px 0;
+}
+
+footer #languages-footer ul li {
+  margin-right: 20px;
+}
+
+/* sottosezione copyright */
+
+footer #copyright-footer {
+  height: 15%;
+}
+
+/* parte di sinistra */
+
+footer #copyright-footer .copyright-left {
+  text-align: left;
+}
+
+footer #copyright-footer .copyright-left img {
+  width: 80px;
+  margin-top: 20px;
+  position: relative;
+  left: -0.8%;
+}
+
+/* parte di destra */
+
+footer #copyright-footer .copyright-right {
+  text-align: right;
+  padding-top: 20px;
+}
+
+footer #copyright-footer .copyright-right span {
+  margin-left: 10px;
+}
