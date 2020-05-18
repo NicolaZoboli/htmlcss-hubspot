@@ -105,6 +105,10 @@ a {
   color: white;
 }
 
+.button-orange:hover {
+  background-color: rgba(254, 119, 90, 0.6);
+}
+
 .button-white {
   background-color: white;
   border: 1px solid #fe775a;
@@ -112,6 +116,11 @@ a {
   padding: 7px;
   color: #fe775a;
 }
+
+.button-white:hover {
+  background-color: #fff1ee;
+}
+
 
 .button-bigger {
   padding: 20px;
@@ -537,6 +546,10 @@ footer a {
   color: white;
 }
 
+footer a:hover, footer .social-icon:hover {
+  color: #24b0c6;
+}
+
 /* sottosezione link a tool e software */
 
 footer #page-footer {
@@ -570,10 +583,6 @@ footer #page-footer #links-footer .colonna25 ul li span .button-footer {
 
 footer #page-footer #links-footer .colonna25 ul li .social-footer li {
   margin-right: 30px;
-}
-
-footer #page-footer #links-footer .colonna25 ul li .social-footer li a {
-  color: white;
 }
 
 footer #page-footer #links-footer .colonna25 ul li .social-footer li a .social-icon {
